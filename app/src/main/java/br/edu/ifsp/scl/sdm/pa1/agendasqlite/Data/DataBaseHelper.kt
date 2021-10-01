@@ -25,7 +25,7 @@ class DataBaseHelper(context: Context):
 
     override fun onCreate(p0: SQLiteDatabase?) {
         val CREATE_TABLE =
-            "CREATE TABLE $TABLE_NAME($ID INTINGER PRIMARY KEY AUTOINCREMENT, $NOME TEXT, $FONE TEXT, $EMAIL TEXT)"
+            "CREATE TABLE $TABLE_NAME($ID INTINGER PRIMARY KEY, $NOME TEXT, $FONE TEXT, $EMAIL TEXT)"
         p0?.execSQL(CREATE_TABLE)
     }
 
